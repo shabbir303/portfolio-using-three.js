@@ -50,7 +50,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Frontend Developer",
       icon: backend,
     },
     {
@@ -109,7 +109,7 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
+      name: "Typescript",
       icon: docker,
     },
   ];
