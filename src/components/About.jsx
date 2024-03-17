@@ -1,12 +1,12 @@
 // import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-// import { styles } from "../style";
+import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion"
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 
-// eslint-disable-next-line react/prop-types
+// eslint-disable-next-line react/prop-types, react-refresh/only-export-components
 const ServiceCard = ({index, title, icon})=>{
   return(
   <Tilt index={index} className="xs:w-[250px] sm:w-[250px] w-full ">
@@ -35,6 +35,10 @@ const ServiceCard = ({index, title, icon})=>{
 const About = () => {
   return (
     <>
+       <motion.div variants={textVariant()} className="text-center mx-auto">
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h1 className={styles.sectionHeadText}>Overview</h1>
+       </motion.div>
        <motion.p variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary max-w-3xl text-[17px] leading-[30px] text-center mx-auto"
       >
