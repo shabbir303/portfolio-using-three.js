@@ -13,8 +13,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -104,14 +102,14 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "Typescript",
-      icon: docker,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "Typescript",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
