@@ -40,6 +40,26 @@ const Works = () => {
                       <img src={project?.image} alt="" 
                         className="w-full h-full object-cover rounded-2xl"
                       />
+                      <div className="absolute flex justify-end inset-0 m-3 card-img_hover">
+                        <div onClick={()=>window.open(project.source_code_link, "_blank")}
+                        className="w-10 h-10 rounded-full cursor-pointer black-gradient flex justify-center items-center"
+                        >
+                          <img src={github} alt="" className="p-2 object-contain" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-5">
+                        <h1 className="font-bold text-[24px]">{project?.name} </h1>
+                        <p className="mt-2 text-secondary text-[14px]">{project.description} </p>
+                    </div>
+                    <div className="mt-4 gap-2 flex flex-wrap">
+                      {project.tags.map((tags, index)=>{
+                       return(
+                         <div key={index}
+                         className={`text-[14px] ${tags?.color}`}
+                         > #{tags.name}</div>
+                        )
+                      })}
                     </div>
                 </Tilt>
 
