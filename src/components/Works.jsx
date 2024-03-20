@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
 import { github } from "../assets";
+import { Chip } from "@mui/material";
 
 const Works = () => {
   return (
@@ -49,7 +50,10 @@ const Works = () => {
                       </div>
                     </div>
                     <div className="mt-5">
+                        <div className="flex justify-between">
                         <h1 className="font-bold text-[24px]">{project?.name} </h1>
+                        <Chip label="Live link" color="primary" variant="outlined" onClick={()=>window.open(project.live_link,"_blank")}/>
+                        </div>
                         <p className="mt-2 text-secondary text-[14px]">{project.description} </p>
                     </div>
                     <div className="mt-4 gap-2 flex flex-wrap">
