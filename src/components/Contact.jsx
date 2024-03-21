@@ -38,7 +38,7 @@ const Contact = () => {
       "4-Uo5ZMCgrDWYFY-8"
     )
       .then(() => {
-        setLoading(true);
+        // setLoading(true);
         toast.success("Thank you. I will get back with you as soon as possible");
         setForm({
           name: "",
@@ -46,7 +46,7 @@ const Contact = () => {
           message: ""
         }),
         (error)=>{
-         setLoading(false);
+        //  setLoading(false);
          toast.error(error.message);
         }
       })

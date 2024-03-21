@@ -31,7 +31,7 @@ const Works = () => {
               >
                 <Tilt 
                  options={{
-                  max:45,
+                  max:500,
                   scale:1,
                   speed:450
                 }}
