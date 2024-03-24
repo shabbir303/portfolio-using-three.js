@@ -4,6 +4,7 @@ import { technologies } from "../constants";
 import {  textVariant } from "../utils/motion";
 import {motion} from "framer-motion";
 import {styles} from "../style";
+import { Tooltip } from "@mui/material";
 
 const Tech = () => {
   return (
@@ -15,10 +16,15 @@ const Tech = () => {
       {
        technologies.map((tech, index)=>(
         <div key={index}>
-          <BallCanvas 
+         <Tooltip 
+         title={tech.name}
+         placement="right"
+         >
+         <BallCanvas 
             className="w-28 h-28"
            icon={tech.icon}
           />
+         </Tooltip>
         </div>
         ))
       }

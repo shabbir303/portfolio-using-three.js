@@ -1,4 +1,5 @@
-import { Tilt } from "react-tilt";
+/* eslint-disable react-refresh/only-export-components */
+// import { Tilt } from "react-tilt";
 import {motion} from "framer-motion";
 import { styles } from "../style";
 import { SectionWrapper } from "../hoc";
@@ -28,15 +29,16 @@ const Works = () => {
            {return (
               <motion.div key={index}
               variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+              className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
               >
-                <Tilt 
+                {/* <Tilt 
                  options={{
-                  max:500,
+                  max:200,
                   scale:1,
-                  speed:450
-                }}
-                className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-                >
+                  speed:250
+                }} */}
+                {/* className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" */}
+                {/* > */}
                     <div className="relative w-full h-[230px]">
                       <img src={project?.image} alt="" 
                         className="w-full h-full object-cover rounded-2xl"
@@ -65,7 +67,7 @@ const Works = () => {
                         )
                       })}
                     </div>
-                </Tilt>
+                {/* </Tilt> */}
 
               </motion.div>
             )}

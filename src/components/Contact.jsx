@@ -19,14 +19,14 @@ const Contact = () => {
     email: "",
     message: ""
   });
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value })
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+    // setLoading(true);
     emailjs.send("service_s086zxl", "template_8hewqki",
       {
         from_name: form.name,
@@ -44,7 +44,9 @@ const Contact = () => {
           name: "",
           email: "",
           message: ""
-        }),
+        })
+        
+        ,
         (error)=>{
         //  setLoading(false);
          toast.error(error.message);
@@ -94,6 +96,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
+              required
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -102,7 +105,8 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? "Sending..." : "Send"}
+            {/* {loading ? "Sending..." : "Send"} */}
+            Send
           </button>
         </form>
       </motion.div>
@@ -113,7 +117,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
       <Toaster
-  position="top-center"
+  position="bottom-center"
   reverseOrder={false}
 />
     </div>

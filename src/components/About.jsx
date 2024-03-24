@@ -5,7 +5,8 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion"
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
-import { Button } from "@mui/material";
+import { Button, Chip } from "@mui/material";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types, react-refresh/only-export-components, no-unused-vars
 const ServiceCard = ({index, title, icon})=>{
@@ -56,11 +57,23 @@ const About = () => {
       >
         Front-end developer from Dhaka, Bangladesh.As a front-end developer, my primary responsibility is to create the user interface and user experience of a website or web application. This involves translating design concepts into functional and visually appealing web pages by using languages like HTML, CSS, and JavaScript. My role is crucial in enhancing the overall usability and interactivity of the digital products you work on & I eager to learn new teachnologies that improves my productivity.
         {/* <button></button> */}
-        <Button variant="contained" 
-        // endIcon={<SendIcon />}>
-        >
+        {/* <Button variant="contained" 
+        endIcon={<FaCloudDownloadAlt />}>
+        
         Click here to see my resume
-</Button>
+</Button> */}
+           <div className="flex justify-center items-center mx-auto">
+           <a href="https://drive.google.com/file/d/19sTqP9D_H7aiddB5c53W_pBX3FrIQ_74/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+           <Chip  
+           className="flex justify-center items-center mx-auto mt-3 text-[25px] font-bold pl-3"
+            label="Click here to see my resume"
+             color="primary"
+              icon={<FaCloudDownloadAlt />}
+               variant="outlined"
+               
+               />
+           </a>
+           </div>
         </div>
       </motion.p>
       </Tilt>

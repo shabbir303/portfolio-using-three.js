@@ -17,11 +17,11 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
     jobit,
     tripguide,
     threejs,
   } from "../assets";
+  import timeForge from "../assets/Timeforge.png";
   
   export const navLinks = [
     {
@@ -59,47 +59,47 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "HTML 5-Expertise",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS 3-Expertise",
       icon: css,
     },
     {
-      name: "JavaScript",
+      name: "JavaScript-Comfortable",
       icon: javascript,
     },
     {
-      name: "TypeScript",
+      name: "TypeScript-Comfortable",
       icon: typescript,
     },
     {
-      name: "React JS",
+      name: "React JS-Expertise",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
+      name: "Redux Toolkit-Familiar",
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
+      name: "Tailwind CSS-Expertise",
       icon: tailwind,
     },
     {
-      name: "Node JS",
+      name: "Node JS-Comfortable",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
+      name: "MongoDB-Comfortable",
       icon: mongodb,
     },
     {
-      name: "Three JS",
+      name: "Three JS-Familiar",
       icon: threejs,
     },
     {
-      name: "git",
+      name: "git-Tools-Comfortable",
       icon: git,
     },
     // {
@@ -196,30 +196,36 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "TimeForge",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "We created this app for online meeting scheduling. Here anyone can schedule meeting and also remainder in it.",
+        live_link:"https://timeforge.vercel.app/",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mongoose",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "typescript",
           color: "pink-text-gradient",
         },
+        {
+          name: "tailwind",
+          color: "orange-text-gradient ",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: timeForge,
+      source_code_link: "https://github.com/orgs/CareerNavigators/repositories",
     },
     {
       name: "Job IT",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        live_link:"https://timeforge.vercel.app/",
       tags: [
         {
           name: "react",
