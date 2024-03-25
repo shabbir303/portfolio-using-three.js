@@ -22,6 +22,7 @@ import {
     threejs,
   } from "../assets";
   import timeForge from "../assets/Timeforge.png";
+  import onlineMarket from "../assets/OnlineMarketPlace.png";
   
   export const navLinks = [
     {
@@ -222,7 +223,7 @@ import {
       source_code_link: "https://github.com/orgs/CareerNavigators/repositories",
     },
     {
-      name: "Job IT",
+      name: "Online Marketplace",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
         live_link:"https://timeforge.vercel.app/",
@@ -240,7 +241,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: onlineMarket,
       source_code_link: "https://github.com/",
     },
     {
